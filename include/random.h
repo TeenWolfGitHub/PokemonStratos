@@ -54,6 +54,7 @@ static inline u16 LocalRandom(rng_value_t *val)
 
 u32 Random32(void);
 u32 Random2_32(void);
+u16 RandRange(u16 min, u16 max);
 
 static inline u16 Random(void)
 {
@@ -82,6 +83,7 @@ u16 Random2(void);
 //Sets the initial seed value of the pseudorandom number generator
 void SeedRng(u16 seed);
 void SeedRng2(u16 seed);
+u16 RandRange(u16 min, u16 max);
 
 //Returns a 32-bit pseudorandom number
 #define Random32() (Random() | (Random() << 16))

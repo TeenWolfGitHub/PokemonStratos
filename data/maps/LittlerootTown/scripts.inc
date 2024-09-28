@@ -394,6 +394,11 @@ LittlerootTown_EventScript_GoSaveBirchTrigger::
 
 LittlerootTown_EventScript_TownSign::
 	msgbox LittlerootTown_Text_TownSign, MSGBOX_SIGN
+	end	
+
+LittlerootTown_EventScript_DebugSign::
+	setflag FLAG_SYS_DEXNAV_GET
+	msgbox LittlerootTown_Text_DebugSign, MSGBOX_SIGN
 	end
 
 LittlerootTown_EventScript_BirchsLabSign::
@@ -998,6 +1003,9 @@ LittlerootTown_Text_GoodLuckCatchingPokemon:
 LittlerootTown_Text_TownSign:
 	.string "LITTLEROOT TOWN\n"
 	.string "“A town that can't be shaded any hue.”$"
+
+LittlerootTown_Text_DebugSign:
+	.string "DEXNAV"
 
 LittlerootTown_Text_ProfBirchsLab:
 	.string "PROF. BIRCH'S POKéMON LAB$"
